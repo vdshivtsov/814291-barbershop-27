@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Барбершоп «Бородинский»</title>
   </head>
   <body>
@@ -29,21 +29,23 @@
         </ul>
         <ul>
           <li>
-             <a href="#">Вход</a>
-           </li>
+            <a href="#">Вход</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
 
-      <h1>Барбершоп «Бородинский»</h1>
+      <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul>
           <li>
             <h3>Быстро</h3>
-            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+            <p>
+              Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
+            </p>
           </li>
           <li>
             <h3>Круто</h3>
@@ -82,7 +84,9 @@
       <section>
         <h2>Фотогалерея</h2>
         <figure>
-          <a href="#"><img src="img/photogallery.jpg" width="286" height="164" alt="Интерьер"></a>
+          <a href="#">
+            <img src="img/photogallery.jpg" width="286" height="164" alt="Интерьер включает в себя удобные кресла, профессиональное оборудование. Мы обеспечим вам уютную атмосферу.">
+          </a>
         </figure>
         <button type="button">Назад</button>
         <button type="button">Вперед</button>
@@ -109,16 +113,34 @@
         <p>
           Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
         </p>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="date-field">Дата</label>
+            <input type="text" name="date" id="date-field" placeholder="08.10.2017">
+          </div>
+          <div>
+            <label for="time-field">Время</label>
+            <input type="text" name="time" id="time-field" placeholder="10:00">
+          </div>
+          <div>
+            <label for="name-field">Ваше имя</label>
+            <input type="text" name="name" id="name-field" placeholder="Борода">
+          </div>
+          <div>
+            <label for="tel-field">Телефон</label>
+            <input type="tel" name="tel" id="tel-field" placeholder="+7 123 456-78-90">
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
     </main>
     <footer>
-      <p>
+      <div>
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
         <a href="#">Как нас найти?</a><br>
         Телефон: +7 (812) 666-02-66
-      </p>
+      </div>
       <div>
         <p>Давайте дружить!</p>
         <ul>
@@ -133,24 +155,41 @@
           </li>
         </ul>
       </div>
-      <p>
+      <div>
         Разработано:
         <a href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
+      </div>
     </footer>
 
     <section>
       <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <label class="visually-hidden" for="login-field">Логин</label>
+          <input type="text" name="login" id="login-field" placeholder="Логин">
+        </div>
+        <div>
+          <label class="visually-hidden" for="password-field">Пароль</label>
+          <input type="password" name="password" id="password-field" placeholder="Пароль">
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="remember" id="remember-field" checked>
+            Запомните меня
+          </label>
+          <a href="#">Я забыл пароль!</a>
+        </div>
+        <button type="submit">Войти</button>
+      </form>
       <button type="button">Закрыть</button>
     </section>
 
     <section>
-      <h2>Как до нас добраться</h2>
-
-      <!-- Тут будет бэкграунд карты (не контентное изображение), а поверх JS на интерактивную карту -->
-
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div>
+        <img src="img/map.jpg" alt="Офис расположен по адресу: г. Санкт-Петербург, улю Большая Конюшенная, д. 19/8">
+      </div>
       <button type="button">Закрыть</button>
     </section>
 
