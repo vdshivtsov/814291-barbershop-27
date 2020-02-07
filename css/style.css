@@ -236,18 +236,16 @@ html {
 
 /*catalog-item.html*/
 
-.container-item {
+.container-light {
+  color: #000000;
+
   background-color: #f8f5f2;
   background-image: url("../img/light-noize-background.jpg");
   background-repeat: repeat;
   background-position: 0 0;
 }
 
-.container-item {
-  color: #000000;
-}
-
-.container-item h1 {
+.container-light h1 {
   font-size: 30px;
   line-height: 42px;
 }
@@ -276,19 +274,19 @@ html {
 .photo-preview li {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
-}
 
 .item-images ul {
   list-style: none;
 }
 
 .item-description h3 {
-  line-height: 30px;
   font-size: 24px;
+  line-height: 30px;
 }
 
 .item-price {
   text-align: center;
+
   background-color: #e5e5e5;
 }
 
@@ -297,7 +295,65 @@ html {
 }
 
 .item-info p:last-child {
-  color: #aeaeae;
   text-align: right;
+  color: #aeaeae;
 }
 
+/*catalog*/
+
+.filter-form legend {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.filter-form fieldset {
+  border-style: none;
+}
+
+.filter-form ul {
+  list-style: none;
+  line-height: 18px;
+  text-align: left;
+}
+
+.filter-form label:hover,
+.filter-form label:focus,
+.filter-form label:active {
+  color: #663d15;
+}
+
+.goods ul {
+  list-style: none;
+}
+
+.goods li {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.goods h3 {
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+}
+
+.goods-pagination {
+  list-style: none;
+}
+
+.goods-pagination li {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  line-height: 18px;
+}
+
+.goods-pagination .current-page {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.goods-pagination a {
+  color: inherit;
+}

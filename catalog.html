@@ -8,87 +8,77 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/small-logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
         </a>
-        <ul>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Новости</a>
-          </li>
-          <li>
-            <a href="price.html">Прайс-лист</a>
-          </li>
-          <li>
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="user-navigation">
           <li>
-            <a href="#">Вход</a>
+            <a class="login-link" href="login.html">Вход</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="container-light">
 
       <h1>Средства для ухода</h1>
 
-      <ul>
+      <ul class="bread-crumbs">
         <li>
           <a href="index.html">Главная</a>
         </li>
         <li>
           <a href="catalog.html">Магазин</a>
         </li>
-        <li>Средства для ухода</li>
+        <li><a>Средства для ухода</a></li>
       </ul>
 
-      <section>
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Производители:</legend>
             <ul>
-              <li class="visually-hidden">
+              <li>
                 <label>
                   <input type="checkbox" name="healer" value="Baxter of California" checked>
                   Baxter of California
                 </label>
               </li>
-              <li class="visually-hidden">
+              <li>
                 <label>
                   <input type="checkbox" name="healer" value="Mr Natty">
                   Mr Natty
                 </label>
               </li>
-              <li class="visually-hidden">
+              <li>
                 <label>
                   <input type="checkbox" name="healer" value="Suavecito" checked>
                   Suavecito
                 </label>
               </li>
-              <li class="visually-hidden">
+              <li>
                 <label>
                   <input type="checkbox" name="healer" value="Malin+Goetz">
                   Malin+Goetz
                 </label>
               </li>
-              <li class="visually-hidden">
+              <li>
                 <label>
                   <input type="checkbox" name="healer" value="Murray’s">
                   Murray’s
                 </label>
               </li>
-              <li class="visually-hidden">
+              <li>
                 <label>
                   <input type="checkbox" name="healer" value="American Crew">
                   American Crew
@@ -100,19 +90,19 @@
           <fieldset>
             <legend>Группы товаров:</legend>
             <ul>
-              <li class="visually-hidden">
+              <li>
                 <label>
                   <input type="radio" name="goods-group" value="shaving">
                   Бритвенные принадлежности
                 </label>
               </li>
-              <li class="visually-hidden">
+              <li>
                 <label>
                   <input type="radio" name="goods-group" value="care" checked>
                   Средства для ухода
                 </label>
               </li>
-              <li class="visually-hidden">
+              <li>
                 <label>
                   <input type="radio" name="goods-group" value="accessories">
                   Аксессуары
@@ -120,11 +110,11 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button" type="submit">Показать</button>
         </form>
       </section>
 
-      <section>
+      <section class="goods">
         <h2 class="visually-hidden">Список средств для ухода</h2>
 
         <ul>
@@ -137,9 +127,9 @@
                 <img src="img/good-1.jpg" width="220" height="165" alt="Стильная черная кожанная косметичка и пять флаконов со средствами для ухода в белых баночках с завинчивающиммися крышками. Товар упаковывается в индивидуальную картонную коробку.">
               </div>
             </a>
-            <div>
-              2 900 ₽
-              <a href="#">Купить</a>
+            <div class="item-price">
+              <b>2 900 ₽</b>
+              <a class="button" href="#">Купить</a>
             </div>
           </li>
           <li>
@@ -151,9 +141,9 @@
                 <img src="img/good-2.jpg" width="220" height="165" alt="Удобный пластиковый флакон, оснащенный дозатором.">
               </div>
             </a>
-            <div>
-              750 ₽
-              <a href="#">Купить</a>
+            <div class="item-price">
+              <b>750 ₽</b>
+              <a class="button" href="#">Купить</a>
             </div>
           </li>
           <li>
@@ -165,9 +155,9 @@
                 <img src="img/good-3.jpg" width="220" height="165" alt="Прозрачный, слегка карамельного оттенка. Поставляется в удобной баночке с завинчивающейся крышкой и модным принтом.">
               </div>
             </a>
-            <div>
-              290 ₽
-              <a href="#">Купить</a>
+            <div class="item-price">
+              <b>290 ₽</b>
+              <a class="button" href="#">Купить</a>
             </div>
           </li>
           <li>
@@ -179,9 +169,9 @@
                 <img src="img/good-4.jpg" width="220" height="165" alt="Поствляется в удобной баночке с завинчивающейся крышкой и качественным принтом.">
               </div>
             </a>
-            <div>
-              500 ₽
-              <a href="#">Купить</a>
+            <div class="item-price">
+              <b>500 ₽</b>
+              <a class="button" href="#">Купить</a>
             </div>
           </li>
           <li>
@@ -193,9 +183,9 @@
                 <img src="img/good-5.jpg" width="220" height="165" alt="Поставляется в мягкой пластиковой тубе с откидной крышкой.">
               </div>
             </a>
-            <div>
-              300 ₽
-              <a href="#">Купить</a>
+            <div class="item-price">
+              <b>300 ₽</b>
+              <a class="button" href="#">Купить</a>
             </div>
           </li>
           <li>
@@ -207,79 +197,74 @@
                 <img src="img/good-6.jpg" width="220" height="165" alt="Набор, как говориться, под ключ. Включает в себя средство в удобной плстиквой баночке с завинчивающейся крышкой, тубу с завинчивающейся крышкой, качественную кисточку для нанесения средства для бритья из натурального материала. Комплект поставляется в модной подарочной упаковке.">
               </div>
             </a>
-            <div>
-              3 900 ₽
-              <a href="#">Купить</a>
+            <div class="item-price">
+              <b>3 900 ₽</b>
+              <a class="button" href="#">Купить</a>
             </div>
           </li>
         </ul>
 
-        <ol>
-          <li>
+        <ol class="goods-pagination">
+          <li class="button">
             <a href="#" aria-label="Переход на страницу 1">1</a>
           </li>
-          <li>
+          <li class="button current-page">
             <a aria-label="Переход на страницу 2">2</a>
           </li>
-          <li>
+          <li class="button">
             <a href="#" aria-label="Переход на страницу 3">3</a>
           </li>
-          <li>
+          <li class="button">
             <a href="#" aria-label="Переход на страницу 4">4</a>
           </li>
         </ol>
       </section>
     </main>
 
-    <footer>
-      <div>
+    <footer class="main-footer">
+      <p class="footer-contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a href="#">Как нас найти?</a><br>
+        <a href="map.html">Как нас найти?</a><br>
         Телефон: +7 (812) 666-02-66
-      </div>
-      <div>
-        <p>Давайте дружить!</p>
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить!</b>
         <ul>
-          <li>
-            <a href="#">Вконтакте</a>
-          </li>
-          <li>
-            <a href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a href="#">Инстаграм</a>
-          </li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-      <div>
-        Разработано:
-        <a href="https://htmlacademy.ru">HTML Academy</a>
-      </div>
+      <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
     </footer>
 
-    <section>
+    <section class="modal modal-login">
       <h2>Личный кабинет</h2>
-      <p>Введите пожалуйста свой логин и пароль</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label class="visually-hidden" for="login-field">Логин</label>
-          <input type="text" name="login" id="login-field" placeholder="Логин">
-        </div>
-        <div>
-          <label class="visually-hidden" for="password-field">Пароль</label>
-          <input type="password" name="password" id="password-field" placeholder="Пароль">
-        </div>
-        <div>
-          <label>
-            <input type="checkbox" name="remember" id="remember-field" checked>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="••••••••">
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
             Запомните меня
           </label>
-          <a href="#">Я забыл пароль!</a>
-        </div>
-        <button type="submit">Войти</button>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <!-- A web browser page reloading plugin for the Sublime Text 3 editor -->
